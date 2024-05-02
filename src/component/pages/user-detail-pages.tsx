@@ -17,10 +17,6 @@ export const UserDetailPage:FC<{onSubmit?: (values: FieldType) => void, initialV
         if (onSubmit) onSubmit(values)
         navigate("/")
     };
-    
-    const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
-        // console.log('Failed:', errorInfo);
-    };
 
     return (
         <div>
@@ -30,7 +26,6 @@ export const UserDetailPage:FC<{onSubmit?: (values: FieldType) => void, initialV
             wrapperCol={{ span: 20 }}
             style={{ maxWidth: 500 }}
             onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
             autoComplete="off"
             initialValues={initialValues}
             >
