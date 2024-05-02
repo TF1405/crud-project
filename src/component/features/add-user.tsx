@@ -1,4 +1,4 @@
-import { ComponentProps } from "react"
+import { ComponentProps, ComponentType } from "react"
 import { UserDetailPage } from "../pages/user-detail-pages"
 import { useAddUser } from "../service/api/add-user"
 import { useUserStore } from "../service/store/user"

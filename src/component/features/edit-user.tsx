@@ -1,4 +1,4 @@
-import { ComponentProps } from "react"
+import { ComponentProps, ComponentType } from "react"
 import { UserDetailPage } from "../pages/user-detail-pages"
 import { useLocation } from "react-router-dom"
 import { DataType } from "../TableUser"
